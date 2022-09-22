@@ -1,29 +1,13 @@
 void main() {
-
   //  working  with lists in dart
-  List<String> names = [];
+  List<String> names = ['ankit', 'paji','subho','vishal', 'jack', 'jassp', 'salman'];
 
-  // adding elements in list
-  names.add('first');
-  names.add('second');
+  // when we only need to know if element is present or not
+  // boolean type return hoga
+  print(names.contains('pajiii'));
 
-  // size
-  print(names.length);
-
-  // print list
-  print('list=$names');
-
-  // remove
-  names.remove('first');
-
-  print('list=$names');
-
-  // if remove at specific index
-  names.removeAt(0);
-
-  print('list=$names');
-
-  // if specific position ma kuch ghusana hai
-  names.insert(0, 'three');
-  print('list=$names');
+  // if we want to know if element is present and its index
+  // IF not found then it returns  -1
+  int foundIndex = names.indexOf('pajJi');
+  print(foundIndex);
 }
