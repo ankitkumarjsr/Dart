@@ -28,4 +28,13 @@ void main() {
       names.where((element) => element.contains('i')).toList();
 
   print(namesStartWithJ);
+
+  // find first element which starts with the given pattern
+  // if no element matches the pattern firstwhere throws an error 
+  try {
+    String fe = names.firstWhere((element) => element.startsWith('anvd'));
+    print(fe);
+  } catch (error) {
+    print('caught error');
+  }
 }
