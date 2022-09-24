@@ -30,4 +30,20 @@ void main() {
     }
   }
   print(freq);
+
+  Map<String, List<int>> m = {};
+  Map<String, List<int>> m1 = {};
+  print(m.isEmpty);
+  m['a'] = [1, 2, 3];
+  m['b'] = [5, 7, 8, 9, 45, 56];
+  print('m = $m');
+  m1['c'] = [111, 22, 3];
+  m1['d'] = [555, 777, 8, 999, 45, 56];
+  print('m1 = $m1');
+  // print(m.length);
+  // print(m.isEmpty);
+
+  // merging two maps
+  m1.addAll(m);
+  print('m1 after merging = $m1');
 }
